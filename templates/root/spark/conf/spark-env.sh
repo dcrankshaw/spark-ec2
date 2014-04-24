@@ -19,7 +19,7 @@ export SPARK_DRIVER_MEMORY={{default_spark_mem}}
 
 # Set JVM options and Spark Java properties
 # SPARK_JAVA_OPTS+=" -Dspark.local.dir={{spark_local_dirs}}"
-SPARK_LOCAL_DIRS="{{spark_local_dirs}}"
+export SPARK_LOCAL_DIRS="{{spark_local_dirs}}"
 
 export HADOOP_HOME="/root/ephemeral-hdfs"
 export SPARK_LIBRARY_PATH="/root/ephemeral-hdfs/lib/native/"
